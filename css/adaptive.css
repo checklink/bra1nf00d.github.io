@@ -1,0 +1,101 @@
+/*desktop*/
+@media only screen and (max-width: 1200px) {
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 4vw 0px 4vw;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+	#about .row {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 100%;
+}
+
+.pic {
+  width: calc(170px + 400 * (100vw / 1920));
+  height: calc(180px + 400 * (100vw / 1920));
+  margin-right: 0vw;
+  margin-bottom: 5vw;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.pic img {
+  height: 130%;
+  transition: 0.5s;
+}
+
+
+#footer .social {
+	display: flex;
+	width: 100%;
+	flex-flow: row;
+	margin-top: 0;
+	justify-content: space-between;
+}
+
+#footer a, #footer a:first-child {
+	font-size: 10px;
+ 	margin-right: 0px;
+}
+
+.card {
+  padding: 4vw 0 0 4vw;
+  margin-top: 12vw;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.mail {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: calc(10px + 40 * (100vw / 1920)) 0 0 0;
+}
+
+.social {
+  margin: 10px 0 0 0;
+}
+
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+/*mobile*/
+@media only screen and (min-width: 320px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+	.text {
+	  width: 65%;
+	}
+}

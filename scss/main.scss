@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*colors*/
 $primary: #000000;
 $second: #fff;
@@ -525,3 +526,532 @@ transform: rotate(180deg);
 .love i {
   color: red;
 }
+=======
+/*colors*/
+$primary: #000000;
+$second: #fff;
+$link: #75a6ff;
+
+/*fonts*/
+$nav_f: 'Sue Ellen Francisco', sans-serif;
+$logo_f: 'New Rocker', sans-serif;
+$main_f: 'Vollkorn', sans-serif;
+
+/*font-width*/
+$main_b: 700;
+
+/*size*/
+$h1_s: 48px;
+$h2_s: 40px;
+$text_s: 28px;
+$card_s: 24px;
+
+/*code*/
+$ind: 0px 15vw 0px 15vw;
+$button: 8px 30px 7px 30px;
+$card_w: 625px;
+$card_h: 700px;
+
+
+/*css*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+*::-webkit-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #c0c0c0;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: 2px solid rgba(0, 0, 0, 0);
+  min-height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar {display:none;}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #000;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "Roboto", sans-serif;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: $h1_s;
+  font-weight: $main_b;
+}
+
+h2 {
+  font-size: $h2_s;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: $ind;
+}
+
+#main {
+  width: 100%;
+  height: auto;
+}
+
+#header {
+  display: flex;
+  background: $primary;
+  color: $second;
+  width: 100%;
+  height: 80px;
+}
+
+#header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  font-family: $logo_f;
+  font-size: $h1_s;
+}
+
+.nav {
+  width: auto;
+}
+
+.nav a {
+  text-transform: uppercase;
+  color: $second;
+  font-family: $nav_f;
+  font-size: $text_s;
+}
+
+.nav_list {
+  display: flex;
+  width: 100%;
+}
+
+.nav_list li:not(:last-child) {
+  margin-right: 67px;
+}
+
+.home {
+  width: 100%;
+  height: auto;
+}
+
+.home .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.me {
+  margin: 60px 0 40px 0;
+}
+
+.me .block {
+  width: 380px;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.case_text {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.case_text span:first-child {
+  position: absolute;
+  font-family: $logo_f;
+  font-size: $h1_s - 10px;
+  line-height: 25px;
+}
+
+.case_text span:last-child {
+  position: absolute;
+  font-family: 'Kurale', sans-serif;
+  font-size: $h1_s;
+  line-height: 45px;
+}
+
+.main_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main_img img:first-child {
+  height: 360px;
+  position: absolute;
+}
+.main_img img:last-child {
+  height: 400px;
+  position: absolute;
+  margin: 15px 0 0 -15px;
+  z-index: -1;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: auto;
+  height: auto;
+}
+
+.title span {
+  font-family: $main_f;
+  font-size: $h1_s + 20px;
+}
+
+.title img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  width: auto;
+  height: auto;
+}
+
+.subtitle span {
+  color: #2e2e2e;
+  font-size: $text_s;
+  font-family: $main_f;
+  line-height: 0px;
+}
+
+.mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $second;
+  background: $primary;
+  padding: $button;
+  font-family: $main_f;
+  font-size: $text_s - 5px;
+}
+
+.social {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-left: 25px;
+}
+
+.social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: $primary;
+  font-size: $text_s;
+}
+
+.social a:not(:last-child) {
+  margin-right: 35px;
+}
+
+.social a:last-child {
+  margin-left: 5px;
+}
+
+#about {
+  width: 100%;
+  height: auto;
+  margin-top: 300px;
+}
+
+#about .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#about a {
+  color: $link;
+}
+
+.pic {
+  width: 420px;
+  height: 570px;
+  margin-right: 7vw;
+  overflow: hidden;
+}
+
+.pic img {
+  height: 100%;
+  transition: 0.5s;
+}
+
+.pic img:hover {
+  height: 130%;
+  transition: 0.5s;
+}
+
+.text {
+  font-size: $text_s;
+  font-family: $main_f;
+}
+
+.text span {
+  display: block;
+}
+
+.text {
+  width: 47vw;
+}
+
+#skill {
+  width: 100%;
+  height: auto;
+  margin-top: 300px;
+}
+
+#skill .row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.case_card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-family: $main_f;
+  width: 100%;
+}
+
+.card span {
+  display: block;
+  width: 450px;
+  font-size: $card_s;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: $primary;
+}
+
+.card img {
+  width: 25vw;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: $card_w;
+  height: $card_h;
+  padding: 40px 0 0 40px;
+  background: #f3f1fd;
+  position: relative;
+  margin-top: 55px;
+}
+
+.card:first-child {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: $card_h - 350px;
+  padding: 40px 0 0 40px;
+  background: #ffc7c7;
+  position: relative;
+}
+
+.card:nth-child(2) img {
+  -moz-transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+
+.card:nth-child(3) {
+  background: #cde3ff;
+}
+
+.card:nth-child(4) {
+  background: #fdf1e3;
+}
+.card:last-child {
+  background: #edf3f5;
+}
+
+.line {
+  margin: 200px 0 40px 0;
+  border-top: 2px solid #b2b2b2;
+}
+
+.codepen {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.codepen a {
+  color: $link;
+}
+
+.codepen img {
+  width: 300px;
+
+}
+
+.codepen span {
+  display: block;
+  font-size: $card_s;
+  margin-right: 50px;
+}
+
+#footer {
+  width: 100%;
+  height: 200px;
+  color: $second;
+  background: $primary;
+  font-size: $card_s;
+  font-family: $main_f;
+}
+
+#footer .row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#footer a {
+  color: $second;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+}
+
+.connect {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+#footer a:first-child {
+  margin-right: 35px;
+}
+
+#footer .social {
+  margin-left: 0px;
+}
+
+.love {
+  display: flex;
+  flex-flow: column;
+}
+
+.love i {
+  color: red;
+}
+>>>>>>> 6d27ac0677a7a05e40a832968d52992771298db0

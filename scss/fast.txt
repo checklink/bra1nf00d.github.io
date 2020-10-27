@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*colors*/
 $primary: #000000;
 $second: #fff;
@@ -20,4 +21,28 @@ $card_s: 24px;
 $ind: 0px 15vw 0px 15vw;
 $button: 8px 30px 7px 30px;
 $card_w: 625px;
+=======
+/*colors*/
+$primary: #000000;
+$second: #fff;
+
+/*fonts*/
+$nav_f: 'Sue Ellen Francisco', sans-serif;
+$logo_f: 'New Rocker', sans-serif;
+$main_f: 'Vollkorn', sans-serif;
+
+/*font-width*/
+$main_b: 700;
+
+/*size*/
+$h1_s: 48px;
+$h2_s: 40px;
+$text_s: 28px;
+$card_s: 24px;
+
+/*code*/
+$ind: 0px 15vw 0px 15vw;
+$button: 8px 30px 7px 30px;
+$card_w: 625px;
+>>>>>>> 6d27ac0677a7a05e40a832968d52992771298db0
 $card_h: 700px;
